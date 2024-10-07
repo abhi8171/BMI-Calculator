@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.Background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.innerImg {
+    border-radius: 15px; 
+}
+
+.container {
+    padding: 20px;
+    height: 100vh;
+    background-color: goldenrod;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label, form input {
+    font-size: 1.1rem; /* Increase the font size for form elements */
+}
+.BMI label {
+    font-size: 1.2em; /* Adjust the value as needed */
+    font-weight: bold;
+}
+
+.BMI p {
+    margin-bottom: 15px; /* Adds space between the input fields */
+}
+
+button {
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: rgb(9, 73, 222);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+button:hover {
+    background-color: rgb(19, 117, 229);
+    transform: scale(90%);
+}
+
+.Guide {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;    
+}
+
+#Result {
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+}
+#Conclusion{
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+}
+.calculate {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 10px; /* Adds some space at the top if needed */
+}
